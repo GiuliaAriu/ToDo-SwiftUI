@@ -95,16 +95,6 @@ struct CustomHeader: View {
     }
 }
 
-struct FillAll: View {
-    let color: Color
-    
-    var body: some View {
-        GeometryReader { proxy in
-            self.color.frame(width: proxy.size.width * 1.3).fixedSize()
-        }
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
